@@ -1,0 +1,149 @@
+/* estilos.css */
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #c5c5c5;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: salmon;
+}
+
+.chefs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.chef {
+    width: 25%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.chef img {
+    width: 100%;
+    height: auto;
+}
+
+.chef h3 {
+    margin: 10px 0 15px;
+}
+
+.chef p {
+    margin: 15px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    margin-top: auto;
+}
+
+
+header{
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+
+.contenido{
+    margin: auto;
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+
+
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 400px;
+    height: 300px;
+
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+
+}
+
+ul.slider li img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+ul.slider li :first-child {
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+
+@keyframes slideAnimation {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+ul.slider li {
+    animation: slideAnimation 20s infinite;
+}
+
+ul.slider li:nth-child(1) { animation-delay: 0s; }
+ul.slider li:nth-child(2) { animation-delay: 5s; }
+ul.slider li:nth-child(3) { animation-delay: 10s; }
+ul.slider li:nth-child(4) { animation-delay: 15s; }
+
+    
+
+
+

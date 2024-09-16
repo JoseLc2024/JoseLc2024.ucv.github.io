@@ -1,0 +1,95 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 450px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Efecto suave */
+}
+
+header img:hover {
+    transform: rotate(360deg); /* Gira el logo al pasar el cursor */
+    opacity: 0.8; /* Reduce un poco la opacidad */
+}
+
+/* Efecto de desvanecimiento al cargar el logo */
+.logo {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.logo.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+nav {
+    background-color: #c5c5c5;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: salmon;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.container img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Efecto de transición */
+    cursor: pointer; /* Hace que el cursor cambie al pasar sobre la imagen */
+}
+
+.container img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen cuando se pasa el mouse */
+    opacity: 0.8; /* Cambia la opacidad para dar un efecto de atenuación */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    margin-top: auto;
+}
+
+/* Efecto de desvanecimiento de imágenes */
+.fade-in {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
